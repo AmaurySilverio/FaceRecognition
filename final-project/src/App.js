@@ -77,7 +77,7 @@ function App() {
   function onSubmit() {
     if (input) {
       setImageUrl(input);
-      fetch("http://localhost:3001/imageurl", {
+      fetch("https://murmuring-savannah-02604.herokuapp.com/imageurl", {
         method: "post",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -87,7 +87,7 @@ function App() {
         .then((response) => response.json())
         .then((response) => {
           if (response) {
-            fetch("http://localhost:3001/image", {
+            fetch("https://murmuring-savannah-02604.herokuapp.com:3001/image", {
               method: "put",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
