@@ -4,8 +4,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "start:dev": "nodemon server.js",
-    "heroku-postbuild": "cd final-project && yarn && yarn run build"
+    "start:dev": "nodemon server.js"
   },
   "license": "MIT",
   "type": "module",
