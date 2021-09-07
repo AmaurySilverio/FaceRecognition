@@ -16,7 +16,7 @@ function Register({ onRouteChange, loadUser }) {
   }
 
   function onSubmitRegister() {
-    fetch("https://murmuring-savannah-02604.herokuapp.com:3001/register", {
+    fetch("https://murmuring-savannah-02604.herokuapp.com/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

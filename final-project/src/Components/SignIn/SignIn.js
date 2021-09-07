@@ -12,7 +12,7 @@ function SignIn({ onRouteChange, loadUser }) {
   }
 
   function onSubmitSignIn() {
-    fetch("https://murmuring-savannah-02604.herokuapp.com:3001/signin", {
+    fetch("https://murmuring-savannah-02604.herokuapp.com/signin", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
