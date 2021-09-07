@@ -12,10 +12,8 @@ import { handleApiCall } from "./controllers/apiCall.js";
 const db = knex({
   client: "pg",
   connection: {
-    host: "postgresql-cubic-68949",
-    user: "Amaury",
-    password: "",
-    database: "smart-brain",
+    host: "process.env.DATABASE_URL",
+    ssl: true,
   },
 });
 
